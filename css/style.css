@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');html { 
+  background: url(file:///home/dushan/Desktop/Survey_Form/images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+  
+#header {
+  width: 560px;
+  height: 100px;
+  margin: auto;
+  background: rgba(44, 130, 201, 0.5);
+  padding-top: 5px;
+  padding-bottom: 2px;
+  text-align: center;
+  line-height: 0.5;
+  font-family: 'Marcellus', serif;
+  border-radius: 20px;
+  color:;
+  border: 1px solid;
+  box-shadow: 5px 10px 8px black;
+}
+
+#survey-form {
+  width: 520px;
+  height: 800px;
+  margin: auto;
+  background: rgba(44, 130, 201, 0.5);
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  font-family: 'Marcellus', serif;
+  border: 1px solid;
+  box-shadow: 5px 10px 8px black;
+}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+    
+.icon {
+  padding: 10px;
+  background: mediumvioletred;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  border-radius: 20px 0 0 20px;
+}
+    
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-family: 'Marcellus', serif;
+}
+    
+.input-field:focus {
+  border: 2px solid mediumvioletred;
+}
+
+input[type='radio']:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color:  #d1d3d1;
+  content: '';
+  visibility: visible;
+  display: inline-block;
+  border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: mediumvioletred;
+  content: '';
+  visibility: visible;
+  display: inline-block;
+  border: 2px solid white;
+}
+  
+
+
+#menu {
+  width: 100%;
+  height: 25px;
+  font-family: 'Marcellus', serif;
+  background-color: mediumvioletred;
+  color: white;
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px mediumvioletred;
+}  
+
+
+#button {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: mediumvioletred;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+  font-family: 'Marcellus', serif;
+  border: 1px solid;
+}
+  
+#button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+  
+#button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+  
+#button:hover span {
+  padding-right: 25px;
+}
+  
+#button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#submit {
+  text-align: center;
+}
+
+#textarea:focus {
+  color: mediumvioletred;
+  border: 1px solid mediumvioletred;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+  }
+
+#dropdown{
+  line-height: 0.1;
+}
+
+#radio-buttons {
+  color: white;
+  line-height: 0.1;
+}
+
+#checkbox {
+  color: white;
+  line-height: 0.1;
+}
+
+#textarea {
+  color: white;
+}

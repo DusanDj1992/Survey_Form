@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Survey_Form">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Dushan Djurdjevic">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description"><em>Thank you for taking the time to help me improve my Web Design skills</em></p>
+        </div><br>    
+        <div id="survey-form">
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Username" name="usrnm" required>
+        </div>
+        
+        <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="Email" name="email"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </div>
+          
+        <div class="input-container">
+            <i class="fa fa-calendar icon"></i>
+            <input class="input-field" type="number" placeholder="Age" name="psw" pattern = "[0-9]" min="1" max="100" required>
+        </div><br>
+        <div id="radio-buttons">
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br>
+        </div><br>
+        <div id="dropdown">
+            <p>Which option best describes your current role?</p>
+            <select name="design" id="menu" class="control" required>
+                <option value="Student">Student</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Full Time Learner">Full Time Learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select>
+        </div><br>
+        <div id="checkbox">
+            <p>What are your top skills?</p>
+            <input type="checkbox" id="item1" name="item1" value="Communication">
+            <label for="item1">Communication</label><br>
+            <input type="checkbox" id="item2" name="item2" value="Curiosity">
+            <label for="item2">Curiosity</label><br>
+            <input type="checkbox" id="item3" name="item3" value="Passion">
+            <label for="item3">Passion</label><br>
+            <input type="checkbox" id="item4" name="item4" value="Openness">
+            <label for="item4">Openness</label><br>
+            <input type="checkbox" id="item5" name="item5" value="Problem Solving">
+            <label for="item5">Problem Solving</label><br>
+            <input type="checkbox" id="item6" name="item6" value="Evolving">
+            <label for="item6">Evolving</label><br>
+            <input type="checkbox" id="item7" name="item7" value="Creativity">
+            <label for="item7">Creativity</label><br>
+            <input type="checkbox" id="item8" name="item8" value="Excellent IT skills">
+            <label for="item8">Excellent IT skills</label><br>
+            <input type="checkbox" id="item8" name="item8" value="Teamwork">
+            <label for="item9">Teamwork</label><br>
+            <input type="checkbox" id="item8" name="item8" value="Leadership">
+            <label for="item10">Leadership</label><br>
+        </div><br>
+        <div id="textarea">
+            <label for="textarea">Any comments or suggestions?</label><br>
+            <textarea id="textarea" name="textarea" rows="5" cols="62" required></textarea>
+        </div><br>
+        <div id="submit">
+            <button id="button" style="vertical-align:middle"><span>Submit</span></button>
+        </div>
+        </div>
+        </form>
+
+    </body>
+</html>
